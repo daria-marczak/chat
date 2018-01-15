@@ -5,4 +5,15 @@
     justify-content: flex-start;
     width: 75vw;
     padding: 20px;
+    overflow-y: scroll;
+}
+
+.MessageText {
+    padding: 1rem;
+    background-color: #855466;
+    color: white;
+    margin: 0.1rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    max-width: 70%;
 }

@@ -13,7 +13,12 @@ const socket = io("/");
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {users: [], messages: [], text: "", name: ""};
+    this.state = {
+      users: [],
+      messages: [],
+      text: "",
+      name: ""
+    };
   }
 
   componentDidMount() {
@@ -48,6 +53,14 @@ class App extends Component {
   renderLayout() {
     return (
       <div className={styles.App}>
+        <div className={styles.AppHeader}>
+          <div className={styles.AppTitle}>
+            Chat
+          </div>
+          <div className={styles.AppRoom}>
+            Chat based on React, compiled with Webpack with use of Socket
+          </div>
+        </div>
         <div className={styles.AppBody}>
           <UsersList users={this.state.users} />
           <div className={styles.MessageWrapper}>

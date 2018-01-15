@@ -5,12 +5,24 @@
     justify-content: flex-start;
     flex-direction: column;
     border-right: 1px solid #ccc;
+    background-color: #EBEBEB;
 }
 
 .UsersOnline {
     padding: 20px;
     text-align: center;
-    background: #ccc;
+    display: flex;
+}
+p {
+    margin-right: 50%;
+}
+.Counter {
+    padding: 0.2rem 1.2rem;
+    background-color: #855466;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
 }
 
 .UsersList {
@@ -21,6 +33,7 @@
 .UserItem {
     list-style: none;
     border-bottom: 1px solid #ccc;
+    background-color: white;
     padding: 20px;
     margin: 0 0 0 20px;
 }

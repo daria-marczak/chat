@@ -1,5 +1,6 @@
-import React from "react";
+import React, {Component} from "react";
 import MessageList from "./MessageList";
+import styles from "./MessageForm.css";
 
 class MessageForm extends Component {
   constructor(props) {
