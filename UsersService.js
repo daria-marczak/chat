@@ -20,4 +20,4 @@ class UsersService {
   }
 }
 
-module.exports = UserService;
+module.exports = UsersService;

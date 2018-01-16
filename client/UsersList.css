@@ -34,6 +34,7 @@ p {
     list-style: none;
     border-bottom: 1px solid #ccc;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
+    width: 80%;
     margin: 0 0 0 20px;
 }
