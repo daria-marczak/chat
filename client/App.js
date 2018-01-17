@@ -30,7 +30,10 @@ class App extends Component {
     };
   };
 
-  
+  componentDidMount() {
+    socket.on("message", message => this.messageReceive(message));
+    socket.on("update", ({users}) => this.chatUpdate(users));
+  };
 
   messageReceive(message) {
     const messages = [message, ...this.state.messages];
@@ -82,11 +85,6 @@ class App extends Component {
     return (
       <UserForm onUserSubmit={name => this.handleUserSubmit(name)} />
     );
-  };
-
-  componentDidMount() {
-    socket.on("message", message => this.messageReceive(message));
-    socket.on("update", ({users}) => this.chatUpdate(users));
   };
 };
 export default App;
